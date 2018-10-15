@@ -1,0 +1,97 @@
+@CHARSET "ISO-8859-1";
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	padding-top:80px;
+	padding-left:0;
+	padding-right:0;
+	overflow-y: scroll;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	/* overflow-y: hidden; Enable scroll if needed
+ */	background-color: none; /* Fallback color */
+ 	background-color: none; Black w/ opacity 
+	
+}
+.modal1 {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	padding-top:80px;
+	padding-left:0;
+	padding-right:0;
+
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+overflow-y: hidden; 
+ */	background-color: none; /* Fallback color */
+ 	background-color: none; Black w/ opacity 
+	
+}
+.modal-content {
+
+  position: relative;
+  height:auto;
+   width:100%;
+   padding-right:-30%;
+
+      padding-left:-30%;
+  background-color: transparent;
+  border: none; //old browsers fallback (ie8 etc)
+  border: none;
+  border-radius: none;
+ /*  .box-shadow(0 3px 9px rgba(0,0,0,.5)); */
+  background-clip: none;
+  // Remove focus outline from opened modal
+  outline: 0;
+}
+.modal1-content {
+
+  position: relative;
+ 
+  height:auto;
+   width:100%;
+   padding-right:-30%;
+
+      padding-left:-30%;
+  background-color: transparent;
+  border: none; //old browsers fallback (ie8 etc)
+  border: none;
+  border-radius: none;
+ /*  .box-shadow(0 3px 9px rgba(0,0,0,.5)); */
+  background-clip: none;
+  // Remove focus outline from opened modal
+  outline: 0;
+}
+
+div {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+input[type="number"] {
+  width: 100px;
+}
+
+input + span {
+  padding-right: 30px;
+}
+
+input:invalid+span:after {
+  position: absolute;
+  content: '✖';
+  padding-left: 5px;
+}
+
+input:valid+span:after {
+  position: absolute;
+  content: '✓';
+  padding-left: 5px;
+}
+.form-control{
+background-color: Gainsboro;}

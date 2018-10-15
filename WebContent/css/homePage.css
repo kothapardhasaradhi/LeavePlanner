@@ -1,0 +1,56 @@
+@CHARSET "ISO-8859-1";
+
+
+#td1 {
+	align: right;
+}
+#holiday {
+	align: right;
+}
+
+::-webkit-scrollbar {
+    width: 0em;
+    height: 0em
+}
+::-webkit-scrollbar-button {
+    background: #ccc
+}
+::-webkit-scrollbar-track-piece {
+    background: #888
+}
+::-webkit-scrollbar-thumb {
+    background: #eee
+}
+.responsive-table {
+	display: inline;
+}
+
+input[type=date] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	color: maroon;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+input[type=month] {
+	width: 70%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	color: maroon;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+input[type=text] {
+	width: 100%;
+
+	margin: 8px 0;
+	display: inline-block;
+	color: grey;
+	/* font-weight:bold; */
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+

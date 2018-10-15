@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <include file="struts-default.xml"/>
+    <package name="a" extends="struts-default" >
+   <action name="retrieve" class="com.wipro.leave.Leavescheduler">
+            <result name="success">/final.jsp</result>
+            <result name="failure">/SearchFailure.jsp</result>
+        </action> 
+  <action name="apply" class="com.wipro.leave.ApplyLeave">
+            <result name="success">/AppliedLeave.jsp</result>
+            <result name="failure">/Failure.jsp</result>
+        </action> 
+        <action name="month" class="com.wipro.leave.ExExcel">
+           <result name="success">/HomePage.jsp</result> 
+        </action>
+           <action name="test" class="com.wipro.leave.TestAction">
+            <result name="success">/final.jsp</result>
+            <result name="failure">/Failure.jsp</result>
+        </action>
+ 
+<action name="backup" class="com.wipro.leave.BackupResources">
+            <result name="success">/header.jsp</result>
+        </action> 
+<!--  <action name="redirection" class="com.wipro.leave.LeaveActions">
+            <result name="success">/final.jsp</result>
+             <result name="failure">/Failure.jsp</result>
+            
+        </action>
+        
+ <action name="update" class="com.wipro.leave.UpdateLeave">
+            <result name="success">/final.jsp</result>
+          
+        </action>   -->
+        <!-- 
+          <action name="DeleteEmployee" class="com.wipro.leave.DeleteEmployee">
+            <result name="success">/final.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>   --> 
+        
+    </package>
+</struts>

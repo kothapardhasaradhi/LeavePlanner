@@ -1,0 +1,160 @@
+@CHARSET "ISO-8859-1";
+
+.pagination {
+	display: inline-block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+
+table {
+	border-collapse: collapse;
+	width: 90%;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.orange {
+	background-color: orange;
+}
+
+#edit.selected tr {
+	background-color: orange;
+	color: orange;
+}
+
+#rowid1 {
+	height: 50%;
+}
+
+tr:hover td {
+	background-color: lightgreen;
+}
+
+tr:hover input {
+	background-color: lightgreen;
+}
+
+tr:nth-child(even):hover input {
+	background-color: lightgreen;
+}
+
+tr:nth-child(even):hover td {
+	background-color: lightgreen;
+}
+
+body {
+	font-family: 'EB Garamond';
+	font-size: 18px;
+}
+
+th,td {
+	text-align: left;
+}
+
+td {
+	background-color: white;
+}
+
+td:input[type="button"] {
+	background-color: white;
+}
+
+th {
+	height: 50%;
+	background-color: #5bc0de;
+	color: white;
+	text-shadow: 3px 2px grey;
+	border-color: black;
+	text-align: justify;
+}
+
+tr:hover {
+	background-color: lwhite;
+}
+
+#td1 {
+	height: 10%;
+	background-color: #5bc0de;
+	text-align: right;
+}
+
+tr:nth-child(even) input {
+	background-color: #f2f2f2;
+}
+
+tr:nth-child(even) td {
+	background-color: #f2f2f2;
+}
+
+.btn-info {
+	color: #fff;
+	background-color: #2481B7;
+	border-color: #46b8da
+}
+
+button[type=submit] {
+	border-color: green;
+}
+
+input[type=text] {
+	border: none;
+	background-color: transparent;
+}
+
+button[type=button]:focus {
+	background: orange;
+}
+
+.btn-info {
+	color: #fff;
+	background-color: #2481B7;
+	border-color: #46b8da
+}
+
+#edit:hover {
+	background-color: lightgreen;
+}
+
+#rowid {
+	height: 10%;
+}
+
+#edit:focus td {
+	background: orange;
+}
+
+#edit {
+	border-color: orange;
+}
+
+#update:hover {
+	background-color: lightgreen;
+}
+
+#delete {
+	border-color: red;
+}
+
+#delete:hover {
+	background-color: lightgreen;
+}
+
+.edit:hover {
+	background-color: lightgreen;
+}
+
+.edit:active {
+	background-color: green;
+}
+
+.update:hover {
+	background-color: lightgreen;
+}
+
+.delete:hover {
+	background-color: lightgreen;
+}
+}

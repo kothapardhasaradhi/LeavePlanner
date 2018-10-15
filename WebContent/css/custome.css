@@ -1,0 +1,303 @@
+
+<style>
+.ui-datepicker {
+	background: #333;
+	border: 1px solid #555;
+	color: #EEE;
+}
+
+td {
+	align: center;
+}
+.textSize {
+	border-bottom-color: red;
+}
+
+
+</style>
+<style>
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: skyblue;
+}
+
+li {
+	float: left;
+}
+.heading{
+	
+	text-align: center;
+}
+
+.apply {
+	float: right;
+}
+
+.dropdown {
+	float: right;
+}
+
+.export {
+	float: right;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+
+.w3-container {
+	width: 100%;
+	background-color: white;
+}
+
+.glyphicon.glyphicon-home {
+	font-size: 25px;
+}
+
+li a:hover {
+	background-color: #f1f1f1;
+}
+</style>
+
+<style>
+/* Full-width input fields */
+input[type=month] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	color: maroon;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+input[type=text] {
+	width: 100%;
+
+	margin: 8px 0;
+	display: inline-block;
+	color: maroon;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+/* 	padding: 12px 20px; */
+/* Set a style for all buttons */
+button.submit {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	align: center;
+	text-align: center;
+	width: 40%;
+	font-size: 12px;
+	border-radius: 20px 20px;
+}
+
+button {
+	background-color: transparent;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	align: center;
+	text-align: center;
+	width: auto;
+	border-radius: 20px 20px;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+	width:50%;
+	
+
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	padding-top:120px;
+	padding-left:150px;
+	padding-right:150px;
+	overflow-y: scroll;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	/* overflow-y: hidden; Enable scroll if needed
+ */	background-color: transparent; /* Fallback color */
+ 	background-color: rgba(0, 0, 0, 0.4); Black w/ opacity 
+	
+}
+
+
+::-webkit-scrollbar {
+    width: 0em;
+    height: 0em
+}
+::-webkit-scrollbar-button {
+    background: #ccc
+}
+::-webkit-scrollbar-track-piece {
+    background: #888
+}
+::-webkit-scrollbar-thumb {
+    background: #eee
+}​
+/* Modal Content/Box */
+.modal-content {
+	background-color: transparent;
+	margin: 5% auto 15% auto;
+	/* 5% from the top, 15% from the bottom and centered */
+		
+	border: 1px solid #888; 
+	width: 40%; /* Could be more or less, depending on screen size */
+}
+
+.modal1 {
+		display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	padding-top:120px;
+	padding-left:150px;
+	padding-right:150px;
+	overflow-y: scroll;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	/* overflow-y: hidden; Enable scroll if needed
+ */	background-color: transparent; /* Fallback color */
+ 	background-color: rgba(0, 0, 0, 0.4); Black w/ opacity 
+}
+
+
+
+/* Modal Content/Box */
+.modal1-content {
+	background-color: transparent;
+	margin: 5% auto 15% auto;
+	/* 5% from the top, 15% from the bottom and centered */
+		border:none;
+		height:80%;
+	width: 40%; /* Could be more or less, depending on screen size */
+}
+
+
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,.close:focus {
+	color: red;
+	cursor: pointer;
+}
+
+
+.close1 {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close1:hover,.close1:focus {
+	color: red;
+	cursor: pointer;
+}
+
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+	
+}
+
+@
+-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)
+}
+
+to {
+	-webkit-transform: scale(1)
+}
+
+}
+@
+keyframes animatezoom {
+	from {transform: scale(0)
+}
+
+to {
+	transform: scale(1)
+}
+
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+}
